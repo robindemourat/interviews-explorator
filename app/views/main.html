@@ -9,12 +9,6 @@
 
         <div class="row">
           <table class="table table-condensed">
-          <!--
-            <tr>
-              <td></td>
-              <td>Content</td> 
-            </tr>
-          -->
 
             <tr class='tablerow st-item' ng-repeat="val in interviewsData" ng-class="{'not-found': find(val, searchTerm), 'active' : isActive(val), 'past' : isPast(val)}" ng-click="handleResearch(val)" id = "{{ val.beginSec}}">
               <td class="play-icon" style="display:none;"><span class="glyphicon glyphicon-play"></span></td>
